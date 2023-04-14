@@ -21,22 +21,17 @@ function App() {
 
   const doStuff = async () => {
     let obj = { ...option, prompt: input }
-    
+
     const response = await openai.createCompletion(obj);
-    console.log(response.data.choices[0].text);
     setResult(response.data.choices[0].text);
   }
-  console.log(input);
 
-  // console.log(Object.values(option));
   return (
     <div className="App">
       <h1>ChatGenie</h1>
-      {/* {process.env.REACT_APP_OPEN_AI_API_KEY} */}
-      
       {Object.values(option).length === 0 ? (
-        <OptionSelection options={ options } selectOption={ selectOption } />
-      ) : <Translation doStuff={ doStuff } setInput={ setInput } result= {result} />}
+        <OptionSelection options={options} selectOption={selectOption} />
+      ) : <Translation doStuff={doStuff} setInput={setInput} result={result} />}
     </div>
   );
 }
