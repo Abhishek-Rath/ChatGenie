@@ -1,5 +1,7 @@
 # ChatGenie - React application made using Open AI API
 
+## API Examples: https://platform.openai.com/examples
+
 ## Features:
 - **TL;DR**: Summarize text by adding tl;dr to the end of passage
 
