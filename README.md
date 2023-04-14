@@ -25,3 +25,33 @@
 
 ### SQL Translate 
 ![image](https://user-images.githubusercontent.com/60350731/232072627-11e6336c-6f52-4a46-92b5-c37e7ebaa1e4.png)
+
+
+### Steps to install the application
+- Clone the repository from Github using the following command:
+    ``` 
+    git clone https://github.com/Abhishek-Rath/ChatGenie.git
+    ```
+
+- Navigate to the project directory:
+    ```
+    cd ChatGenie
+    ```
+
+- Install the dependecies:
+    ```
+    npm install
+    ```
+
+- Configure the environment variables: 
+
+    Make ```.env``` file inside root directory of this project and paste your ```API KEY```
+    Get your api key from here: https://platform.openai.com/account/api-keys
+    ```
+    REACT_APP_OPEN_AI_API_KEY = YOUR_API_KEY_GOES_HERE
+    ```
+
+- Start the application:
+    ```
+    npm start
+    ```
